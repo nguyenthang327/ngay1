@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 16px;
+            box-sizing: border-box;
+        }
+        .tinhthanh{
+            background-color: #ccc;
+            font-size: 18px;
+            max-width: 200px;
+           
+        }
+        .mien_bac{
+            color: blue;
+            list-style: none;
+        }
+        .mien_trung{
+            color: red;
+            font-size: 30px;
+            list-style: none;
+        }
+        .mien_nam{
+            color: yellow;
+            list-style: none;
+        }
+        .mienbac {
+            color: green;
+            background-color: pink;
+        }
+
+        .mientrung {
+            color: yellow;
+            background-color: grey;
+        }
+
+        .miennam {
+            color: red;
+            background-color: darkviolet;
+        }
+
+        .trunguong {
+            font-size: 32px;
+        }
+
+        .tpbinhthuong {
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+
+    <pre>
+        khái niệm thẻ html : <thẻ mở> nội dung của thẻ </thẻ đóng>
+        khai niệm thuộc tính thẻ html : bổ sung tính chất ý nghĩa
+        cho thẻ html
+        ví dụ thẻ img có thuộc tính src chỉ ra đường dẫn của hình ảnh
+        thẻ a có thuộc tính href chỉ ra liên kết của thẻ a
+
+        ***
+        khai niệm thuộc tính style của thẻ html để trang trí cho thẻ html
+
+        giá trị của thuộc tính style là các đoạn code để trang trí
+        cấu trúc css trong thuộc tính style
+        thuộc_tính_css1: giá trị; thuộc_tính_css1: giá trị 2;
+        vd :
+        color là màu chữ
+        background-color là màu nền
+    </pre>
+
+    
+    <!-- inline attibute css-->
+    <div style="color: yellow; background-color: green">Thẻ div 1</div>
+    <div style="color: red; background-color: pink">Thẻ div 2 </div>
+
+
+    <pre>
+        thuộc tính html : nằm trong thẻ mở của thẻ html
+        ví dụ có thuộc tính src="" hay href=""
+        thuộc tính css : đường dùng trang trí
+        ví dụ :
+        color là màu chữ
+        background-color màu nền
+        font-size là kích thước văn bản
+        border là đường viền
+    </pre>
+
+    <div style="color: green; background-color: gray; font-size: 32px; border: 5px solid red; padding: 20px; margin-top:50px ;">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus alias cumque, 
+        doloribus dolorum facilis harum impedit in, ipsam molestias natus officia pariatur 
+        quam quia, ratione sed sit veniam voluptatum. Saepe?
+
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi dolore 
+        dolorem ducimus explicabo facere facilis harum hic illo libero 
+        maiores molestias odio quaerat, quod repudiandae sapiente sed sint ut velit.
+    </div>
+
+    <br>
+    <pre>
+        thuộc tính class của html : áp dụng để gom nhóm các thẻ
+        html vào 1 nhóm cho mục đích trang trí trong css
+        hay là tương tác với js
+        vd :
+        miền bắc chữ xanh , nền hồng
+        miền trung chữ vàng , nền xám
+        miền nam chữ đỏ , nền tím
+    </pre>
+    <!-- Danh sách các tỉnh thành-->
+
+    <div class="tinhthanh">
+        <ul>
+            <!-- miền bắc -->
+            <li class="mien_bac">Hà nội</li>
+            <li class="mien_bac">Hải phòng</li>
+            <li class="mien_bac">Hải phòng</li>
+            <li class="mien_bac">Hải phòng</li>
+            <li class="mien_bac">Hải phòng</li>
+            <li class="mien_bac">Hải phòng</li>
+            <!-- miền trung-->
+            <li class="mien_trung">nghệ an</li>
+            <li class="mien_trung">hà tĩnh</li>
+            <li class="mien_trung">nghệ an</li>
+            <li class="mien_trung">nghệ an</li>
+            <li class="mien_trung">nghệ an</li>
+            <li class="mien_trung">nghệ an</li>
+            <li class="mien_trung">nghệ an</li>
+            <!--miền nam-->
+            <li class="mien_nam">tp hochi minh</li>
+            <li class="mien_nam">tp hochi minh</li>
+            <li class="mien_nam">tp hochi minh</li>
+            <li class="mien_nam">tp hochi minh</li>
+            <li class="mien_nam">tp hochi minh</li>
+            <li class="mien_nam">tp hochi minh</li>
+        </ul>
+    </div>
+
+    <!-- thanh pho-->
+    <pre>
+        thuộc tính class của html : áp dụng để gom nhóm các thẻ
+        html vào 1 nhóm cho mục đích trang trí trong css
+        hay là tương tác với js
+        vd :
+        miền bắc chữ xanh , nền hồng
+        miền trung chữ vàng , nền xám
+        miền nam chữ đỏ , nền tím
+
+        gom nhóm theo tp trực thuộc TW
+        và thanh phố ko thuộc TW
+
+        chữ của các tp thuộc tw có font-size: 32px
+        còn lại các tp khác font-size: 18px
+    </pre>
+
+
+    <pre style="color: red">
+        1 thẻ có thể có nhiều class theo cấu trúc
+        class="className1 className2 className3 className4 ..."
+    </pre>
+
+    <ul>
+        <li class="mienbac trunguong">Hà nội</li>
+        <li class="mienbac tpbinhthuong">Hải phòng</li>
+        <li class="mienbac tpbinhthuong">Nam định</li>
+
+        <li class="mientrung tpbinhthuong">Thanh hóa</li>
+        <li class="mientrung tpbinhthuong">Nghệ an</li>
+        <li class="mientrung tpbinhthuong">Hà tĩnh</li>
+
+        <li class="miennam trunguong">Tp HCM</li>
+        <li class="miennam tpbinhthuong">Vĩnh long</li>
+        <li class="miennam trunguong">Đà nẵng</li>
+    </ul>
+
+    <!-- the id-->
+    <pre>
+        để định danh cho 1 thẻ html duy nhất
+    </p
+
+</body>
+</html>
